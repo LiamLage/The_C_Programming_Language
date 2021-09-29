@@ -25,7 +25,6 @@ int main()  {
             ++nLines;                   /* increment nLines */
         }
     }
-    printf("%s\t%s\t%s\n", "Blanks", "Tabs", "Newlines");   /* print headings */
-    printf("%3d\t%3d\t%3d\n", nBlanks, nTabs, nLines);      /* print Blanks, Tabs & Newlines */
+    printf("%s%d\n%s%d\n%s%d\n%s%d\n", "Blanks: ", nBlanks, "Tabs: ", nTabs, "New Lines: ", nLines);      /* print Blanks, Tabs & Newlines */
     return 0;
 }
