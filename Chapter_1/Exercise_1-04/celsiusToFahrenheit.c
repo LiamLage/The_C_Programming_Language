@@ -14,8 +14,8 @@ int main()  {
     int step  = 20;     /* lower limit */
 
     celsius = lower;
-    printf("%s\n", "Celsius to Fahrenheit Conversion, 2dp");
-    printf("%s\n", "Celsius\t\tFahrenheit");
+    printf("%s\n", "Celsius to Fahrenheit Conversion, 2dp.");
+    printf("\n%s\n", "Celsius\t\tFahrenheit");
     while (celsius <= upper)
     {
         fahr = (celsius / (5.0/9.0)) + 32;

@@ -1,8 +1,9 @@
-/* 1.2 Variables & Arithmetic Expressions
-*   This program uses the formula °C = (5/9)(°F-32) to print
-*   a table of Fahrenheit temperatures and their centigrade
-*   or Celsius equivalents:
-*/
+/*  Author: Liam Lage
+ *  28/09/2021
+ *  Solutions for Exercise 1-3.
+ */
+
+/*  Conversion formula °C = (5/9)(°F-32) */
 
 #include <stdio.h>
 
