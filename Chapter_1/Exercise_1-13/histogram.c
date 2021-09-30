@@ -9,6 +9,9 @@
 #define IN_WORD  1
 #define OUT_WORD 0
 
+/* Print a histogram of the frequency of
+ * different characters in the input. */
+
 int main(void)  {
     int c, word_state;
     int word_length[MAX_LENGTH + 1];
@@ -35,19 +38,19 @@ int main(void)  {
                     ++word_length[I - 1];
                 else
                     ++word_length[MAX_LENGTH];
-                    word_state = OUT_WORD;
+                word_state = OUT_WORD;
             }
             if (c == EOF)
                 break;
         }
     }
     printf("\nHorizontal Histogram\n\n");
-    printf(" length | graph\n");
+    printf("length | graph\n");
     for (i = 0; i <= MAX_LENGTH; ++i) {
         if (i != MAX_LENGTH)
             printf("    %2d | ", i + 1);
         else
-            printf("    >%2d | ", MAX_LENGTH);
+            printf("   >%2d | ", MAX_LENGTH);
         for (j = 0; j < word_length[i]; ++j)
             putchar('+');
         putchar('\n');
@@ -60,12 +63,12 @@ int main(void)  {
             max_count = word_length[i];
     }
     for (i = 0; i < max_count; ++i) {
-        printf("    %2u | ", max_count - i);
+        printf("    %2u |", max_count - i);
         for (j = 0; j <= MAX_LENGTH; j++) {
             if (word_length[j] >= max_count - i)
-                printf("   +");
+                printf("  +");
             else
-                printf("    ");
+                printf("   ");
         }
         printf("\n");
     }

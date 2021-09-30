@@ -6,7 +6,7 @@ long nc;    /* long integers are at least 32 bits */
 double cc;
 
 
-main () {
+int main (void) {
     // nc = 0;
     // while(getchar() != EOF) {   /* while input is not end-of-file */
     //  ++nc;   /* prefix ++ operator increments nc; evquivalent to nc = nc + 1 */
@@ -15,6 +15,7 @@ main () {
     for (cc = 0; getchar() != EOF; ++cc)    {
         print();
     }
+    return 0;
 }
 
 void print()    {
