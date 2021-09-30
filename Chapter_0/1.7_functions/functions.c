@@ -16,6 +16,7 @@
 int power(int m, int n);
 int stdpow(double m, double n);
 double pow();
+
 /* test power function */
 int main()  {
     int i, j;

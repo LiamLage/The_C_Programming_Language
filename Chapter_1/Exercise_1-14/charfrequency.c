@@ -1,6 +1,6 @@
 /*  Author: Liam Lage
  *  30/09/2021
- *  Solutions for Exercise 1-13.
+ *  Solutions for Exercise 1-14.
  */
 
 #include <stdio.h>
