@@ -1,6 +1,7 @@
 /*  Author: Liam Lage
  *  01/10/2021
- *  Scanf eats an int
+ *  Scanf eats an int and converts it 
+ *  from Celsius to Fahrenheit.
  */
 
 #include <stdio.h>
@@ -13,10 +14,9 @@ float usr_input();
  * print the fahr value */
 
 int main()  {
-    
-    printf("%s\n\n", "Celsius to Fahrenheit conversion");
     float i = 0;
-    i = usr_input();
+    i = usr_input();    
+    printf("%s\n", "Celsius to Fahrenheit conversion:");
     printf("%4.1f°C = %4.1f°F\n", i, temp_conversion(i));
 
     return 0;

@@ -21,15 +21,15 @@ double pow();
 int main()  {
     int i, j;
 
-    printf("Base^n \n=\n\n");
-    printf("Base | n = 2 | n = -3\n");
+    printf("Raise base to n-th power:\n");
+    printf("n | base = 2 | base = -3\n");
     for (i = 0; i < 10; ++i) {
-        printf("%4d %7d %8d\n", i, power(2,i), power(-3,i));
+        printf("%d%s %7d%s %8d\n", i, " | ", power(2,i), " | ", power(-3,i));
     }
     printf("\nNow with std lib function pow():\n");
-    printf("Base | n = 2 | n = -3\n");
+    printf("n | base = 2 | base = -3\n");
     for (j = 0; j < 10; ++j) {
-        printf("%4d %7d %8d\n", j, stdpow(2,j), stdpow(-3,j));
+        printf("%d%s %7d%s %8d\n", j, " | ", stdpow(2,j), " | ", stdpow(-3,j));
     }
     return 0;
 }
@@ -45,6 +45,7 @@ int power(int base, int n) {
     return p;
 }
 
+/* stdpow: raise base to n-th power using stdlib pow() */
 int stdpow(double base, double n) {
     int i, p2;
     p2 = 1;
