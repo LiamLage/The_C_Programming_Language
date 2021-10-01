@@ -3,10 +3,6 @@
  *  Solution to Exercise 1-16.
  */
 
-/* print the longest line
- * main and getline communicate through a pair of args and a returned value.
- * In getline, the args are declared by the line */
-
 #include <stdio.h>
 #define MAXLINE 1000    /* maximum input line length */
 
