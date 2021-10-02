@@ -7,7 +7,15 @@
 #define MAXLINE 1000    /* maximum input line length */
 
 int getline(char line[], int maxline);
-void copy(char to[], char from[]);      
+//void copy(char to[], char from[]);      
+
+/* copy: copy 'from' into 'to'; assume to is big enough */
+void copy(char to[], char from[]) {
+    int i = 0;
+
+    while ((to[i] = from[i]) != '\0')
+        ++i;
+}
 
 /* print the longest line */
 int main()  {
@@ -50,10 +58,3 @@ int getline(char s[], int lim)  {   /* specifies that the 1st arg, s, is an arra
     return i;
 }
 
-/* copy: copy 'from' into 'to'; assume to is big enough */
-void copy(char to[], char from[]) {
-    int i = 0;
-
-    while ((to[i] = from[i]) != '\0')
-        ++i;
-}
