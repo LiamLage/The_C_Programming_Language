@@ -11,7 +11,7 @@
 #define MAXLINE 1000    /* maximum input line length */
 
 int getline(char line[], int maxline);
-void copy(char to[], char from[]);      
+void copy(char to[], char from[]);
 
 /* print the longest line */
 int main()  {
@@ -23,8 +23,8 @@ int main()  {
     printf("Enter lines, ones complete press Ctrl+Z, the longest line will be returned\n");
     while ((len = getline(line, MAXLINE)) > 0) {
         if (len > max) {           /* max length so far*/
-            max = len;             
-            copy(longest, line);    /* copy from longest to line */
+            max = len;
+            copy(longest, line);    /* copy to longest from line */
         }
     }
     if (max > 0) {
@@ -32,12 +32,12 @@ int main()  {
         printf("%s\n", longest);
         printf("It has %d characters.\n", max);
     }
-        
+
     return 0;
 }
 
 /* getline: read a line into s, return length */
-int getline(char s[], int lim)  {   /* specifies that the 1st arg, s, is an array, and the 2nd, lim, is an int 
+int getline(char s[], int lim)  {   /* specifies that the 1st arg, s, is an array, and the 2nd, lim, is an int
                                      * no length is specified for s; it is set in main */
     int c, i;
 
