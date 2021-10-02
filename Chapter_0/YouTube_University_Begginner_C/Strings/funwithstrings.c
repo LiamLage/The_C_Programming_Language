@@ -1,5 +1,9 @@
-/* Special thanks to Jacob Sorber for his begginner C videos
- * on youtube. All of the code below is attributed to him,
+/* Special thanks to Jacob Sorber for his begginner C
+ * videos on youtube.
+ * https://www.youtube.com/watch?v=5TzFNouc0PE&list=PL9IEJIKnBJjG5H0ylFAzpzs9gSmW_eICB&index=7
+ * https://www.youtube.com/watch?v=dcBcgPGIMpo&list=PL9IEJIKnBJjG5H0ylFAzpzs9gSmW_eICB&index=8
+ *
+ * All of the code below is attributed to him,
  * I am mearly using it for educational purposes.
  *
  * Liam Lage
