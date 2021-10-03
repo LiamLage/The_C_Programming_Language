@@ -53,7 +53,7 @@ int main(int argc, char **argv) {
         for (int i = 0; i <= len - 1; ++i)
             num[i] = line[i];
         x = atof(num);                                              /* convert the string to a float */
-        printf("%s\n%6.2f%s\n", "Fahrenheit to Celsius:", fahrenheit_to_celsius(x), "°C");  /* convert from F to C and print */
+        printf("%s\n%6.3f%s\n", "Fahrenheit to Celsius:", fahrenheit_to_celsius(x), "°C");  /* convert from F to C and print */
     }
     else if (line[len - 1] == 'C')  {                               /* the last letter is 'C', input is Centigrade */
         for (int i = 0; i <= len - 1; ++i)
