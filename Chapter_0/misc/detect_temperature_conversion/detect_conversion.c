@@ -1,5 +1,9 @@
 /* Author: Liam Lage
  * 02/10/2021
+ *
+ * 04/02/2021 _ edit comments
+ *      changed from printing %s "°"
+ *      to %c 248 ASCII DEC
  */
 
 /* Enter the temperature with the suffix C or F
@@ -7,7 +11,7 @@
  * visa versa. */
 #include <stdio.h>
 #include <stdlib.h>
-#define MAXLENGTH 100
+#define MAXLENGTH 1000
 
 /* convert Fahrenheit to Celsius*/
 float fahrenheit_to_celsius(float argFahrenheit)   {
@@ -53,13 +57,13 @@ int main(int argc, char **argv) {
         for (int i = 0; i <= len - 1; ++i)
             num[i] = line[i];
         x = atof(num);                                              /* convert the string to a float */
-        printf("%s\n%6.3f%s\n", "Fahrenheit to Celsius:", fahrenheit_to_celsius(x), "°C");  /* convert from F to C and print */
+        printf("%s\n%6.3f%c%s\n", "Fahrenheit to Celsius:", fahrenheit_to_celsius(x), 248, "C");  /* convert from F to C and print */
     }
     else if (line[len - 1] == 'C')  {                               /* the last letter is 'C', input is Centigrade */
         for (int i = 0; i <= len - 1; ++i)
             num[i] = line[i];
         x = atof(num);                                              /* convert the string to a float */
-        printf("%s\n%6.2f%s\n", "Celsius to Fahrenheit:", celsius_to_fahrenheit(x), "°F");  /* convert from C to F and print */
+        printf("%s\n%6.2f%c%s\n", "Celsius to Fahrenheit:", celsius_to_fahrenheit(x), 248, "F");  /* convert from C to F and print */
     }
     else
         printf("ERROR");                                            /* something went wrong */

@@ -46,11 +46,11 @@ int getline(char s[], int lim)  {   /* specifies that the 1st arg, s, is an arra
     int c, i, j;
 
     for (i = j = 0; i < (lim - 1) && ((c = getchar()) != EOF) && (c != '\n'); ++i) {
-        if (i < lim - 1)
+        if (i < lim - 1)            // make sure the string is less than MAXLINE before saving it in the array
             s[j++] = c;
     }
     if (c == '\n')  {
-        if (j < lim -1)
+        if (j < lim -1)             // make sure the string is less than MAXLINE before saving it in the array
             s[j++] = c;
         ++i;
     }

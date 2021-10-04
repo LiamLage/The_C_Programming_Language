@@ -1,12 +1,16 @@
 /* Author: Liam Lage
  * 03/10/2021
- * Solution to Exercise 1-18
+ * Solution to Exercise 1-18.
  */
 #include <stdio.h>
 #define MAX_SIZE 1000    // maximum string length
 
 void trim_trailing(char str[], int lim);
 
+// I managed to remove trailing blanks
+// and newlines but I haven't figured 
+// out how to entirely remove blank
+// lines, 
 int main(int argc, char **argv) {
     int c;
     char str[MAX_SIZE]; // current input line
@@ -15,11 +19,9 @@ int main(int argc, char **argv) {
     for (int i = 0; (c = getchar()) != EOF; ++i) {  	// get user input
         str[i] = c;
     }
-
     printf("\nOriginal string, no trimming: \n\"%s\"", str);    // print entered string before trimming
     trim_trailing(str, MAX_SIZE);
     printf("\n\nTrimmed string: \n\"%s\"", str);                // print trimmed string
-
     return 0;
 }
 
