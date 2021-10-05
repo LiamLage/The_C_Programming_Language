@@ -1,6 +1,6 @@
 /* Author: Liam Lage
- * 04/10/2021
- * 
+ * 05/10/2021
+ *
  * Solutions to Exercise 1-22
  */
 
@@ -12,7 +12,7 @@ int usr_input(char s[], int max_line);
 int main(int *argc, char **argv[])  {
     char s[MAX_SIZE];
     int i, length;
-    
+
     printf("Enter code, comments will be removed:\n");
     while ((length = usr_input(s, MAX_SIZE)) > 0) {
         printf("\nResult:\n");
@@ -51,7 +51,7 @@ int main(void)  {
     char str[] = "This is a test";  // These are some comments
     printf("%s\n", str);
     return 0;
-
-
+    maths = 2/3;
+    more comments;  // comment
 }
 */
