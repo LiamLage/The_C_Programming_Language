@@ -3,13 +3,14 @@
  *  Solutions for Exercise 1-11.
  */
 #include <stdio.h>
+#include <stdint.h>
 
 #define IN  1
 #define OUT 0
 /* count lines, words, digits and characters in input */
 
 int main(void)  {
-    int c, nLine, nWord, nDigit, nChar, state;  /* counter variables */
+    int32_t c, nLine, nWord, nDigit, nChar, state;  /* counter variables */
     nLine = nWord = nDigit = nChar = 0;         /* initialize all counters to 0 */    
     state = OUT;                                /* initialize state to OUT */
     printf("%s\n", "Enter characters, when complete press Ctrl+Z"); /* User prompt */
