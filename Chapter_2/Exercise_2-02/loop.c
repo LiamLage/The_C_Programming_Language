@@ -26,11 +26,11 @@
      printf("Enter a string, then press Enter to proceed:\n");  // prompt user
      while (i < MAX_SIZE - 1) {
         if ((c = getchar()) == '\n')
-            break;
-        if (c == EOF)
-            break;
+                break;
+        else if (c == EOF)
+                break;
         else
-            s[i++] = c;
+                s[i++] = c;
      }
      s[i] = '\0';   // NULL terminate
 
