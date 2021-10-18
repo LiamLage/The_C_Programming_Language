@@ -9,16 +9,14 @@
  * value of EOF 
  * press Ctrl^Z + enter to send EOF  */
 
-int main()  {
-    int e, c, EOF_val;
-    
+int main(int argc, char *argv[])  {
+    int c;
+
+    printf("\n%s\n", "Please enter characters, press Ctrl Z or Ctrl D when complete:"); // prompt user    
     while ((c = getchar()) != EOF)  {
+        printf("%d ", c != EOF);
         putchar(c);
     }
-    e = (getchar() != EOF);
-    EOF_val = EOF;
-    //printf("%s\n", "Value of getchar() != EOF: ");
-    //printf("%d\n", e);
-    printf("%s\n","The value of EOF: ");
-    printf("%d\n", EOF_val);
+    printf("\n%d\n", c != EOF);
+    return 0;
 }

@@ -13,7 +13,7 @@
 int32_t usr_input(char s[], int32_t lim);
 uint32_t htoi(char s[], int32_t len);
 
-int main(void)  {
+int main(int32_t argc, char *argv[])  {
     char line[LIM];
     int32_t len;
 
@@ -35,16 +35,11 @@ int32_t usr_input(char s[], int32_t lim) {
     return i - 1;   // return length of s[] - '\0'
 }
 
+// Hexadecimal to Integer
 uint32_t htoi(char s[], int32_t len) {
-    int32_t i,c, n;
-    long long dec;
-    n = dec = 0;
-    /* decimal calculation steps:
-     * Chapter_2\Exercise_2-03\hextoint.jpg
-     * decimal = d    x 16^n-1 + d    x 16^n-1
-     *            n-1             n-1
-     */
-    
+    int32_t i, c, n;
+    long long decimal;
+    n = decimal = 0;
     for (i = 0; s[i] != '\0'; ++i) {
         c = s[i];
         // Allow optional 0x or 0X suffix
@@ -62,9 +57,9 @@ uint32_t htoi(char s[], int32_t len) {
         else if (isupper(c))
             n = c - 'A' + 10;   // 'A' = Dec 65 ASCII  
         
-        dec += n * pow(16, len); 
+        decimal += n * pow(16, len); 
         len--;
     }
-    return dec;   
+    return decimal;   
 }
     

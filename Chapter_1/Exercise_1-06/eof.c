@@ -4,21 +4,18 @@
  */
 
 #include <stdio.h>
-
+#include <stdint.h>
 /* Copy input to output and verify that the
  * expression c = getchar() != EOF is 0 or 1. 
  * press Ctrl^Z + enter to send EOF  */
 
-int main()  {
-    int e, c, EOF_val;
+int32_t main(int32_t argc, char **argv)  {
+    int32_t c;
     
     while ((c = getchar()) != EOF)  {
+        printf("%d ", c != EOF);
         putchar(c);
     }
-    e = (getchar() != EOF);
-    EOF_val = EOF;
-    printf("%s\n", "Value of getchar() != EOF: ");
-    printf("%d\n", e);
-    printf("%s\n","The value of EOF: ");
-    printf("%d\n", EOF_val);
+    printf("\n%d\n", c != EOF);
+    return 0;
 }

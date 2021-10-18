@@ -7,10 +7,10 @@
 
 #include <stdio.h>
 
-/* print Fahrenheit-Celsius table
-    for fahr = 0, 20, ..., 300 */
+/* print Fahrenheit-Celsius table from
+ * 0 to 300 degrees Fahrenheit */
 
-int main () {
+int main (int argc, char *argv[]) {
 /* Variable declaration
    type, name */
     float fahr_f, celsius_f;

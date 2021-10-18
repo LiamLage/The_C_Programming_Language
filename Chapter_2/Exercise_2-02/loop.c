@@ -11,14 +11,14 @@
   *     s[i] = c;
   * write a loop equivalent to the for loop above without using && or ||. */
 
-    /* before reading a new character it is necesary to check
+    /* before reading a new character it is necessary to check
      * that there is room to store it in the array s[], so the
      * test i < LIM - 1 must be done first. If this test fails
      * we must not go on to read another character, similarly
      * the call and assignment of c must occur before it is
      * tested against EOF. */
 
- int main(void) {
+ int main(int32_t argc, char *argv[]) {
      int32_t c, i, lim;
      char s[MAX_SIZE];
      i = 0;

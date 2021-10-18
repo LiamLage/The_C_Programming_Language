@@ -4,10 +4,10 @@
  */
 
 #include <stdio.h>
+#include <stdint.h>
 
 /* print Celsius-Fahrenheit Table */
-
-int main()  {
+int32_t main(int32_t argc, char *argv[])  {
     float fahr, celsius;
     int lower = 0;      /* lower limit of temperature table */
     int upper = 300;    /* upper limit */
