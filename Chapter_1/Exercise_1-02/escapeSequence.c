@@ -8,7 +8,7 @@
  * string in which the escape sequence is demonstrated.
  */
 int main()  {
-    printf("Evaluate result of printf arg \\c where \\c is not a valid arg\n");          /* result is compiler error "unknown
+    printf("Evaluate result of printf arg \c where \\c is not a valid arg\n");          /* result is compiler error "unknown
                                                                                           * escape sequence: '\c'" */
     // escape sequences
     printf("\n%s%11s%15s\n", "Description", "Symbol", "Demonstration");                     // Table Heading
@@ -23,7 +23,7 @@ int main()  {
     printf("Question Mark:   \\?\t\"Is there a question mark at the end\?\"\n");            // \? for Question mark
     printf("Octal Number:    \\000\t\"This is an octal number: \065.\"\n");                 // \000 for Octal number
     printf("Hexidecimal:     \\xhh\t\"This is a hexidecimal number: \x35.\"\n");            // \xhh for Hexidecimal numbers
-    printf("NULL Character:   \\0\t\"Represents NULL or the end of a char array: \0.\"\n"); // \0 for the NULL character
+    printf("NULL Character:  \\0\t\"Represents NULL or the end of a char array: \0.\"\n"); // \0 for the NULL character
     printf("\n");
     return 0;
 }
