@@ -27,6 +27,9 @@ int main(int argc, char *argv[]) {
     int num;
     char str[LIM];
 
+    for (int i = 0; i < LIM - 1; i++)
+        str[i] = '\0';
+
     // num = -2147483647;
     num = -2147483648;      // largest negative int
 
